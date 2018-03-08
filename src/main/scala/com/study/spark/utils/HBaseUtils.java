@@ -9,12 +9,15 @@ import org.apache.hadoop.hbase.util.Bytes;
 import java.io.IOException;
 
 /**
- * Created by zhang on 2017/11/21.
+ *
+ * @author gong
+ * @date 2017/11/21
  */
 public class HBaseUtils {
 
     HBaseAdmin admin = null;
     Configuration configration = null;
+    @SuppressWarnings("AliDeprecation")
     private HBaseUtils(){
 
         configration = new Configuration();
